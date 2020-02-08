@@ -20,7 +20,7 @@ described in this page [here](README.md).
 **Step 2:** Enter the job name, in this case `mabl test`. Then select `Pipeline` from the types of jobs lists. 
 Finally, click the OK, button on the lower left of the web page, as shown in the figure below.
 
-![project name](images/enter-project-name.png)
+![project name](images/enter-project.png)
 
 **Step 3:** You'll be taken to the job configuration page. Enter a short `Description` about the job as 
 shown in the figure below.
