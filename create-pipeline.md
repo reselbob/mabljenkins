@@ -30,7 +30,7 @@ shown in the figure below.
 **Step 4:** Select the `Poll SCM` option in the `Build Triggers` section. Then enter a polling
  interval, for example `H/10 * * * *` as shown in the figure below.
 
-![set scm polling](images/poll-scm.png)
+![set scm polling](images/set-polling.png)
 
 The interval statement,`H/10 * * * *` indicates that the GitHub repo will be polled every 10 minutes.
 
@@ -60,7 +60,15 @@ The interval statement,`H/10 * * * *` indicates that the GitHub repo will be pol
 
 ### Creating the Pipleline Script
 
-**Step 1:** Create the Pipeline script.
+**Step 1:** Go back to the job
+![back to job](images/access-project.png)
+
+**Step 2:** Click the `Configure` link
+![back to job](images/access-configure-proj)
+
+**Step 3:** Scroll down to the Pipleline section.
+
+![enter script](images/jenkins-script.jpg)
 
 Enter the following script in the section, `Pipeline` as shown at the callout (1) in the figure that follows the code.
 
@@ -79,26 +87,19 @@ withCredentials([string(credentialsId: 'mabl_access_token', variable: 'mabl_acce
   }
 }
 ```
-![enter script](images/jenkins-script.jpg)
+
 
 Then save the job by clicking the `Save` button as shown at callout (2) in the figure above.
 
-**Step 6:**  Start the Pipeline job.
+**Step 4:**  Start the Pipeline job.
 
 You start the Pipeline job by clicking the link, `Build now` as shown at callout (1) on the left side of the figure below.
  
 You can view the progress as shown at callout (2) and then watch the outcome as shown at callout (3)
  in the figure below.
 
-![run job](images/jenkins-build.jpg)
+![run job](images/build-project.png)
 
-## Review
 
-In this lesson you've created a Jenkins Pipeline job that:
-
-* gets the code for the microservice, `Wise Sayings` from the repository, [https://github.com/reselbob/wisesaying](https://github.com/reselbob/wisesaying)
-* builds a Docker container image from source code
-* runs a Docker container from the Docker image that Jenkins built
-* exercises the Wise Saying web server running in the container.
 
 **EXERCISE COMPLETE**
