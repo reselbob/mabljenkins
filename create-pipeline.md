@@ -64,7 +64,7 @@ The interval statement,`H/10 * * * *` indicates that the GitHub repo will be pol
 ![back to job](images/access-project.png)
 
 **Step 2:** Click the `Configure` link
-![back to job](images/access-configure-proj)
+![back to job](images/access-configure-proj.png)
 
 **Step 3:** Scroll down to the Pipleline section.
 
