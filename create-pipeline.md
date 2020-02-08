@@ -41,29 +41,37 @@ The interval statement,`H/10 * * * *` indicates that the GitHub repo will be pol
 ![select credentials](images/select-credentials.png)
 
 **Step xx:**
+
 ![select global credentials](images/select-global-credentials.png)
 
 **Step xx:**
+
 ![select global credentials](images/select-jenkins.png)
 
 **Step xx:**
+
 ![add credentials](images/add-credentials.png)
 
 **Step xx:**
+
 ![add credentials](images/add-credentials-02.png)
 
 **Step xx:**
+
 ![add credentials](images/add-secret-01.png)
 
 **Step xx:**
+
 ![add credentials](images/add-secret-02.png)
 
 ### Creating the Pipleline Script
 
 **Step 1:** Go back to the job
+
 ![back to job](images/access-project.png)
 
 **Step 2:** Click the `Configure` link
+
 ![back to job](images/access-configure-proj.png)
 
 **Step 3:** Scroll down to the Pipleline section.
