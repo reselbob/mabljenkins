@@ -13,7 +13,7 @@ We'll run this project under [Katacoda](katacoda.com).
 
 **Step 2:** Clone the repository code
 
-`https://github.com/reselbob/mabljenkins.git`
+`git clone https://github.com/reselbob/mabljenkins.git`
 
 **Step 3:** Go to the project's directory
 
