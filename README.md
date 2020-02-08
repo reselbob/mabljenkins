@@ -1,4 +1,4 @@
-# mabljenkins
+# mablJenkins
 A version of the Jenkins container that includes often used utilities and programs such as node, npm, curl, etc.
 
 Also, this Jenkins container includes the `mabl` command line tool. `mablJenkins` allows you to run Docker in a Pipeline stage of a shell exec task.
@@ -47,5 +47,5 @@ You'll output that is similar to, but not exactly the following:
 The first time you go the site you'll be asked to enter the login ID you generated above in Step 3.
 Then you'll need to create some login credentials.
 
-**Step 6:** Once you get Fat Jenkins up and running as a Docker container, continue on to instructions
+**Step 6:** Once you get mablJenkins up and running as a Docker container, continue on to instructions
 found [here](create-pipeline.md) to learn how to create a Jenkins Pipeline job.
