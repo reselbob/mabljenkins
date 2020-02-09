@@ -9,9 +9,9 @@ described in this page [here](README.md).
 ## Creating a sample Plan with Tests in the `mabl` web interface
 Before you can run tests in mabl under a pipeline job in Jenkins you need to have an account on [mabl](https://www.mabl.com). Then, once you've created an account for yourself, you need to create one or many tests using using the mabl website.
 
-The following video gives you an overview about how to create tests under mabl. Take a look at the video. It's only a minute and half.
+The following video gives you an overview about how to create tests under mabl. Click the image below to view an overview video. It's only a minute and half.
 
-<iframe width="1093" height="615" src="https://www.youtube.com/embed/pbM8nXYEclM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Watch the video](images/yt/easy-setup.png)](https://www.youtube.com/watch?v=pbM8nXYEclM)
 
 Assuming you've viewed the video, let's now go into the step-by-step instructions that show you how to create a test against examples on the mabl [sandbox web site](https://sandbox.mabl.com/).
 
