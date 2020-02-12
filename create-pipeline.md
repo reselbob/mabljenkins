@@ -41,8 +41,7 @@ Assuming you've viewed the video, let's now go into the step-by-step instruction
 
 ![create job](images/create-job.png)
 
-**Step 2:** Enter the job name, in this case `mabl test`. Then select `Pipeline` from the types of jobs lists. 
-Finally, click the OK, button on the lower left of the web page, as shown in the figure below.
+**Step 2:** Enter the job name, in this case `mabl test` (1). Then select `Pipeline` from the types of jobs lists (2). Finally, click the OK, button on the lower left of the web page, as shown in the figure below (3).
 
 ![project name](images/enter-project.png)
 
