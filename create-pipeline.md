@@ -19,7 +19,18 @@ Assuming you've viewed the video, let's now go into the step-by-step instruction
 
 ### Creating a test
 
+![Watch the video](images/yt/holder-creating-ui-test-trainer.jpg)
+
+
 ### Adding the test to a plan
+
+![Watch the video](images/yt/holder-adding-a-test-to-a-plan.jpg)
+
+### Understanding a mabl Deployment
+
+### Getting tokens and identifiers from mabl
+
+![Watch the video](images/yt/holder-getting-tokens-and-identifiers.jpg)
 
 ## Creating a Pipeline Job in Jenkins
 
@@ -47,51 +58,102 @@ shown in the figure below.
 
 The interval statement,`H/10 * * * *` indicates that the GitHub repo will be polled every 10 minutes.
 
+**Step 5:** Save the job
+
 ### Adding the access and environment information to Jenkins as secrets
 
-**Step xx:**
+In order to run a Jenkins Pipeline job using the mabl CLI tool you need to store two pieces of information that are particular to your mabl account within Jenkins. The first piece of information is your access token. The second piece of information is the enviornment ID that is special to your mabl instance.
 
-![select credentials](images/select-credentials.png)
+This information is sensitive so your going to store each piece as a Jenkins secret. The following steps show you how to create the secrets.
 
-**Step xx:**
+**Step 1:** Accessing the credentials page.
 
-![select global credentials](images/select-global-credentials.png)
+Go to the Jenkins main page.
 
-**Step xx:**
+![Create Secret](images/create-secret-01.png)
 
-![select global credentials](images/select-jenkins.png)
+Click the `Credentials` link from the items listed on the left side of the page (1). The page will show the **Stores scoped to Jenkins** section will appear on the right side.
 
-**Step xx:**
+![Create Secret](images/create-secret-02.png)
 
-![add credentials](images/add-credentials.png)
+Click the link, **Global credentials (unrestricted)** that appears on the left side of the page, as shown in the figure below.
 
-**Step xx:**
+![Create Secret](images/create-secret-03.png)
 
-![add credentials](images/add-credentials-02.png)
+**Step 2:** Creating global credentials
 
-**Step xx:**
+Click on the link, `Global credential (unrestricted)` as shown in the figure below.
 
-![add credentials](images/add-secret-01.png)
+![Create Secret](images/create-secret-04.png)
 
-**Step xx:**
+**Step 3:** Click the link, `Add Credentials` that appears on the left of the page.
 
-![add credentials](images/add-secret-02.png)
+![Create Secret](images/create-secret-05.png)
+
+**Step 4:** Select `Secret text`
+
+Once you select `Add Credential` you'll be presented with a page that contains dropdown lists and textboxes. In the top most list labeled, **Kind:** select `Secret text` as shown in the figure below.
+
+![Create Secret](images/create-secret-06.png)
+
+**Step 5:** Add the `mabl_access_token` secret
+
+Click the link, **Add Credentials** on the left side of the Jenkins page.
+
+Select `Global (Jenkins, nodes, items. all child items, etc)` from the dropdown (1).
+
+Enter the value for the **mabl access token** that you've retreived from your account on the mabl web site in the textbox labeled, `Secret`. (2)
+
+Enter a unique id for this secret in the textbox labeled,`ID` (3). In this case you'll see in the figure below that the string assigned to the ID is `mabl_access_token`.
+
+Once all the data is entered, click the `OK` button beneath the data entry fields (4).
+
+![Create Secret](images/create-secret-07.png)
+
+**Step 6:** Add the `mabl_environment_ID` secret
+
+Click the link, **Add Credentials** on the left side of the Jenkins page.
+
+![Create Secret](images/create-secret-08.png)
+
+Select `Global (Jenkins, nodes, items. all child items, etc)` from the dropdown (1).
+
+![Create Secret](images/create-secret-09.png)
+
+Enter the value for the mabl **environment id** that you've retreived from your account on the mabl web site in the textbox labeled, `Secret`. (2)
+
+Enter a unique id for this secret in the textbox labeled,`ID` (3). In this case you'll see in the figure below that the string assigned to the ID is `mabl_evironment_id`.
+
+Once all the data is entered, click the `OK` button beneath the data entry fields (4).
+
+![Create Secret](images/create-secret-10.png)
+
+Congratulations! You've created the two secrets you'll need to configure a Jenkins Pipeline job that uses the mabl CLI tool.
+
+![Create Secret](images/create-secret-11.png)
+
 
 ### Creating the Pipleline Script
 
 **Step 1:** Go back to the job
 
+Click the Jenkins logo at the top of the page (1). Then click the link for the **mabl Pipeline Test** located on the right side of the page.
+
 ![back to job](images/access-project.png)
 
 **Step 2:** Click the `Configure` link
 
+You're now going to configure the actual script for the pipeline job in Jenkins. Click the `Configure` link on the left hand side of the job page.
+
 ![back to job](images/access-configure-proj.png)
 
-**Step 3:** Scroll down to the Pipleline section.
+**Step 3:** Configure the pipeline script
+
+Scroll down to the Pipeline section as shown in the figure below.
 
 ![enter script](images/jenkins-script.jpg)
 
-Enter the following script in the section, `Pipeline` as shown at the callout (1) in the figure that follows the code.
+Enter the following script in the section, `Pipeline` as shown at the callout (1) in the figure above.
 
 ```
 withCredentials([string(credentialsId: 'mabl_access_token', variable: 'mabl_access_token'), string(credentialsId: 'mabl_environment_id', variable: 'mabl_environment_id')]) {
@@ -121,5 +183,4 @@ You can view the progress as shown at callout (2) and then watch the outcome as 
 ![run job](images/build-project.png)
 
 
-
-**EXERCISE COMPLETE**
+Congratulations! You've create a Jenkins Pipeline job that runs tests hosted on mabl.
