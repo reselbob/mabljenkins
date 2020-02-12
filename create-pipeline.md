@@ -28,6 +28,8 @@ Assuming you've viewed the video, let's now go into the step-by-step instruction
 
 ### Understanding a mabl Deployment
 
+UNDER DEVELOPMENT
+
 ### Getting tokens and identifiers from mabl
 
 ![Watch the video](images/yt/holder-getting-tokens-and-identifiers.jpg)
@@ -35,7 +37,7 @@ Assuming you've viewed the video, let's now go into the step-by-step instruction
 ## Creating a Pipeline Job in Jenkins
 
 
-### Setting up the `mabl Pipeline Test job in Jenkins
+### Setting up the `mabl Pipeline Test` job in Jenkins
 
 **Step 1:** Create a job by clicking on the `create new job` link as shown in the figure below.
 
