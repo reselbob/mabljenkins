@@ -63,9 +63,9 @@ The interval statement,`H/10 * * * *` indicates that the GitHub repo will be pol
 
 ### Adding the access and environment information to Jenkins as secrets
 
-In order to run a Jenkins Pipeline job using the mabl CLI tool you need to store two pieces of information that are particular to your mabl account within Jenkins. The first piece of information is your access token. The second piece of information is the enviornment ID that is special to your mabl instance.
+In order to run a Jenkins Pipeline job using the mabl CLI tool you need to store within Jenkins two pieces of information that are particular to your mabl account. The first piece of information is your access token. The second piece of information is the enviornment ID that is special to your mabl instance.
 
-This information is sensitive so your going to store each piece as a Jenkins secret. The following steps show you how to create the secrets.
+This information is sensitive so you're going to store each piece as a Jenkins secret. The following steps show you how to create the secrets.
 
 **Step 1:** Accessing the credentials page.
 
