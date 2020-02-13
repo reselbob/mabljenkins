@@ -69,7 +69,7 @@ This information is sensitive so you're going to store each piece as a Jenkins s
 
 **Step 1:** Accessing the credentials page.
 
-Go to the Jenkins main page.
+Go to the Jenkins main page by clicking the Jenkins logo in the upper right corner as shown in the figure below.
 
 ![Create Secret](images/create-secret-01.png)
 
