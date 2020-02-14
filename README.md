@@ -34,7 +34,7 @@ We'll run this project under [Katacoda](katacoda.com).
 
 `docker exec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword`
 
-You'll output that is similar to, but not exactly the following:
+You'll output that is similar to, but not exactly like the following:
 
 `4b36a89b91a24c51a5d4042433c013e2`
 
