@@ -1,4 +1,4 @@
 git
 matrix-auth
 maven-plugin
-pipeline-plugin
+build-pipeline-plugin
